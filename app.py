@@ -48,19 +48,18 @@ if uploaded_file:
         data = datetime.now().strftime("%d/%m/%Y %H:%M")
 
         with st.expander(f"✅ Usuário {nome} (Protocolo #{protocolo})"):
-            st.markdown(f"""
-            - **Nome Completo:** {nome}  
-            - **Login (sAMAccountName):** `{login}`  
-            - **Sigla:** `{sigla}`  
-            - **First Name:** `{first_name}`  
-            - **Last Name:** `{last_name}`  
-            - **Full Name:** `{full_name}`  
-            - **Cargo (Description):** {cargo}  
-            - **Unidade (Office):** {unidade}  
-            - **Gestor:** {gestor}  
-            - **Setor:** {setor}  
-            - **Usuário Espelho:** {usuario_espelho.upper()}  
-            - **Email:** `{email}`  
-            - **Senha inicial:** `{senha}`  
-            - **Data/Hora:** {data}  
-            - 🔐 **Usuário deve**
+            st.markdown(f"""- **Nome Completo:** {nome}  
+- **Login (sAMAccountName):** `{login}`  
+- **Sigla:** `{sigla}`  
+- **First Name:** `{first_name}`  
+- **Last Name:** `{last_name}`  
+- **Full Name:** `{full_name}`  
+- **Cargo (Description):** {cargo}  
+- **Unidade (Office):** {unidade}  
+- **Gestor:** {gestor}  
+- **Setor:** {setor}  
+- **Usuário Espelho:** {usuario_espelho.upper()}  
+- **Email:** `{email}`  
+- **Senha inicial:** `{senha}`  
+- **Data/Hora:** {data}  
+- 🔐 **Usuário deve trocar senha no primeiro login**""")
